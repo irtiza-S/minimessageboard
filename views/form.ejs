@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= websiteTitle %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= titleOfCurrentPage %></h1>
+    <form method='POST' action="/new">
+      <table>
+        <tr>
+        <td>Name</td>
+        <td><input type="text" name="messageUser" placeholder="enter your name"></td>
+        </tr>
+        <tr>
+        <td>Message</td>
+        <td><textarea name="messageText" id="text" cols="30" rows="10" placeholder="your message"></textarea><td>
+        </tr>
+        <tr>
+        <td colspan="2"><input type="submit" value="Submit" ></td>
+        </tr>
+    </table>
+    </form>
+  </body>
+</html>
